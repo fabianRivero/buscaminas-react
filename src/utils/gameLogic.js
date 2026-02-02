@@ -191,6 +191,7 @@ export function checkWin(state) {
     });
 
     const bestTime = time === "NaN:NaN:NaN" ? "-" : time;
+    console.log(bestTime)
 
     //Se crea un nuevo estado de juego ganado
     const newState = {
