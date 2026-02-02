@@ -196,7 +196,7 @@ export function checkWin(state) {
     const newState = {
       started: false,
       board: newBoard,
-      minesLeft: state.minesLeft,
+      minesLeft: 0,
       mines: state.mines,
       flags: state.flags,
       gameOver: true,
