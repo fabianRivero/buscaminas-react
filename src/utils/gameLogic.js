@@ -189,10 +189,6 @@ export function checkWin(state) {
         }
       })
     });
-
-    const bestTime = time === "NaN:NaN:NaN" ? "-" : time;
-    console.log(bestTime)
-
     //Se crea un nuevo estado de juego ganado
     const newState = {
       started: false,
@@ -203,7 +199,7 @@ export function checkWin(state) {
       gameOver: true,
       timer: state.timer,
       message: `🎉 ¡Ganaste! Tiempo: ${time}`,
-      bestTime: bestTime
+      bestTime: "-"
     }
 
     //Se guarda el tiempo en el localStorage si es un nuevo record
