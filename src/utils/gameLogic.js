@@ -200,7 +200,7 @@ export function checkWin(state) {
       gameOver: true,
       timer: state.timer,
       message: `🎉 ¡Ganaste! Tiempo: ${time}`,
-      bestTime: time
+      bestTime: time || "-"
     }
 
     //Se guarda el tiempo en el localStorage si es un nuevo record

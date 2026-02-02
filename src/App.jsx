@@ -12,9 +12,9 @@ esas funciones como props a los componentes de la aplicación.
 */
 
 function App() {
-  const [cols, setCols] = useState(5);
-  const [rows, setRows] = useState(5);
-  const [mines, setMines] = useState(8);
+  const [cols, setCols] = useState(6);
+  const [rows, setRows] = useState(6);
+  const [mines, setMines] = useState(4);
   const [gameState, setGameState] = useState(initalState);
 
   //Función para cambiar en state de columnas
